@@ -1,4 +1,6 @@
-//Todo Phase 1
+// Parent/Child Component Practice
+//Styling React with Css classes
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 
