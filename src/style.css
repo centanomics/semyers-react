@@ -1,9 +1,7 @@
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
 }
 
-#App {
+.joke-list {
   text-align: center;
 }
