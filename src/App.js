@@ -7,6 +7,7 @@ import './style.css'
 function App() {
   return (
     <div className='joke-list'>
+      <h1>Joke List</h1>
       <Joke question='Whats white and black and red all over?' punchLine='A newspaper' />
       <Joke question='Whats an ants worst fear' punchLine='anteaters' />
       <Joke question='What sound does a sheep, drum, and snake make when they fall off of a clip' punchLine='ba dum tss' />
