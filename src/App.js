@@ -1,18 +1,20 @@
 import React from 'react'
 
-import Joke from './components/Joke'
-
-import './style.css'
+import Product from './components/Product'
+import products from './components/vschoolProducts'
 
 function App() {
+
+  const productList = products.map(product => {
+    return (
+      <Product key={product.id} title={product.name} cost={product.price} desc={product.description}/>
+    )
+  })
+
   return (
-    <div className='joke-list'>
-      <h1>Joke List</h1>
-      <Joke question='Whats white and black and red all over?' punchLine='A newspaper' />
-      <Joke question='Whats an ants worst fear' punchLine='anteaters' />
-      <Joke question='What sound does a sheep, drum, and snake make when they fall off of a clip' punchLine='ba dum tss' />
-      <Joke question='What did the Buddhist ask the hotdog vendor' punchLine='Make me one with everything' />
-      <Joke question='What is red and smells like blue paint' punchLine='red paint' />
+    <div>
+      <h1>The products we offer:</h1>
+      {productList}
     </div>
   )
 }
